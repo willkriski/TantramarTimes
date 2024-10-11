@@ -11,6 +11,9 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        sans: ['Merriweather', 'Arial', 'Helvetica', 'sans-serif'], // Add Merriweather to the font stack
+      },
     },
   },
   plugins: [],

@@ -17,7 +17,19 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Merriweather', Arial, Helvetica, sans-serif; /* Add Merriweather to the front */
+}
+
+/* Link styles */
+
+.content a {
+  color: #1d4ed8; /* Change this to your desired link color */
+  text-decoration: underline; /* Optional: underline links */
+}
+
+.content a:hover {
+  color: #2563eb; /* Change this to your desired hover color */
+  text-decoration: underline; /* Optional: underline on hover */
 }
 
 @layer utilities {
@@ -25,3 +37,36 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Add styles for the .content class */
+.content h1 {
+  font-size: 36px; /* Set font size for <h1> tags */
+}
+
+.content p {
+  font-size: 19px; /* Set font size for <p> tags */
+  margin-bottom: 1rem; /* Adds spacing between <p> tags */
+}
+
+/* globals.css or your specific CSS file */
+.content ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  font-size: 19px; /* Set font size for <p> tags */
+  margin-bottom: 1rem; /* Adds spacing between <p> tags */
+}
+
+.content ul li {
+  position: relative; /* Positioning for custom bullet */
+  padding-left: 1.5em; /* Space for custom bullet */
+}
+
+.content ul li::before {
+  content: '•'; /* Custom bullet character */
+  position: absolute; /* Position it absolutely */
+  left: 0; /* Align it to the left */
+  color: #1d4ed8; /* Change this to your desired bullet color */
+  font-size: 1.2em; /* Adjust bullet size */
+}
+/* Add more styles for other elements as needed */
